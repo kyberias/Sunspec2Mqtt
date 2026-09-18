@@ -24,7 +24,7 @@ namespace Sunspec2Mqtt
                         config.AddEnvironmentVariables();
                         config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
                         config.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
-                        config.AddUserSecrets<Program>(optional: true);
+                        config.AddUserSecrets<Sunspec2MqttProgram>(optional: true);
                         config.AddEnvironmentVariables();
                     });
 
